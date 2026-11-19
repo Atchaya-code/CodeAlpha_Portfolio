@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf7;
+    color: #51434a;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #fff;
+    padding: 18px 8%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #c47791;
+    font-size: 26px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #51434a;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #c47791;
+}
+
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+#home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fffaf7, #fce9ef);
+}
+
+#home h1 {
+    font-size: 55px;
+    color: #bd718d;
+    margin: 10px 0;
+}
+
+#home h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #c47791;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #a85d79;
+    transform: translateY(-3px);
+}
+
+section h2 {
+    color: #bd718d;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 700px;
+    margin: auto;
+}
+
+#skills {
+    background-color: #fceef2;
+}
+
+.project-card {
+    background-color: white;
+    max-width: 450px;
+    margin: 25px auto 0;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #bd718d;
+    margin-bottom: 10px;
+}
+
+#contact {
+    background-color: #fceef2;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #8b737d;
+}
+
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #home h1 {
+        font-size: 38px;
+    }
+
+    section {
+        padding: 60px 7%;
+    }
+}
